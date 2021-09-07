@@ -6,21 +6,48 @@
     --brightblue: hsl(245, 75%, 52%);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url(images/pattern-background-desktop.svg);
+    font-family: 'Red Hot Display', sans-serif;
+    background-image: url(images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: var(--paleblue);
 }
 
+p {
+    font-size: 16px;
+    color: var(--desaturatedblue);
+}
+
+img {
+    max-width: 100%;
+}
+
 .container {
-    position: absolute;
     border-radius: 3%;
     background-color: var(--verypaleblue);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    margin: 50px 20px;
+    padding:  0 0 20px;
+    text-align: center;
 }
+
+.container img {
+    border-radius: 10px 10px 0 0;
+}
+
+.container .card h1 {
+    color: var(--darkblue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
 
