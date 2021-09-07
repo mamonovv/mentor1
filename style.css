@@ -1,0 +1,130 @@
+:root {
+    --verypaleblue: hsl(225, 100%, 98%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+    --activeButton: hsl(245, 59%, 63%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hot Display', sans-serif;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--paleblue);
+
+}
+
+p {
+    font-size: 16px;
+    color: var(--desaturatedblue);
+}
+
+.hero {
+    width: 100%;
+}
+
+.container {
+    border-radius: 5%;
+    background-color: var(--verypaleblue);
+    margin: 50px 20px;
+    padding:  0 0 20px;
+    text-align: center;
+    width: 350px;
+    margin: 10vh auto;
+    box-shadow: 0px 15px 20px -5px rgb(192, 192, 192);
+}
+
+.container img {
+    border-radius: 20px 20px 0 0;
+}
+
+.container .card h1 {
+    color: var(--darkblue);
+    margin: 30px 0 20px;
+    font-size: 25px;
+}
+
+.container .card p {
+    padding: 0 40px;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.container .card h2 {
+    font-size: 16px;
+    color: var(--darkblue);
+}
+
+.container .card {
+    position: relative;
+}
+
+
+.container .card h2::before {
+    content: "";
+    position: absolute;
+    background-image: url("./images/icon-music.svg");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    left: 55px;
+}
+
+.container .card .plan {
+    position: relative;
+}
+
+.container .card .plan a {
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+}
+
+.container .card .payment {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--brightblue);
+    height: 50px;
+    margin: 0 30px;
+    border-radius: 10px;
+    color: var(--verypaleblue);
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card .payment:hover {
+    background-color: var(--activeButton);
+}
+.container .card .cancel {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--desaturatedblue);
+    font-weight: 700;
+    margin: 25px 0 13px 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+}
